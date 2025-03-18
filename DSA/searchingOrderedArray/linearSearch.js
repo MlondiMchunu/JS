@@ -1,7 +1,9 @@
 const linearSearch = (array, searchValue) => {
-    for (const [index, element] of array.entries()) {
+    const array1 = array.sort((a, b) => a - b)
+    console.log(array1)
+    for (const [index, element] of array1.entries()) {
         if (element === searchValue) {
-            return index;
+            return `element found at : ${index}`;
         } else if (element > searchValue) {
             break;
         }
@@ -9,4 +11,4 @@ const linearSearch = (array, searchValue) => {
     return null
 }
 
-console.log(linearSearch([3, 17, 75, 80, 202], 80))
+console.log(linearSearch([3, 202, 75, 17, 80], 80))
