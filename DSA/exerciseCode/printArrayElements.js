@@ -17,3 +17,5 @@ function isPrime(number) {
 }
 
 console.log(isPrime(15))
+
+//time complexity => O(N)
