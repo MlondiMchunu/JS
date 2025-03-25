@@ -7,13 +7,16 @@ const bubbleSort = (array) => {
 
         for (let i = 0; i < unsortedUntilIndex; i++) {
             if (array[i] > array[i + 1]) {
-                [array[i], array[i + 1]] = [array[i + 1], array[i]];
+                [array[i], array[i + 1]] = [array[i + 1], array[i]]
                 sorted = false;
             }
-        }
-        unsortedUntilIndex -= 1;
-    }
-    return array;
+        }unsortedUntilIndex-=1
+    }return array;
+
+
 }
 
-console.log(bubbleSort([65,55,45,35,25,15,10]))
+console.log(bubbleSort([65, 55, 45, 35, 25, 15, 10, 100]))
+
+let sorted = false;
+console.log(!sorted)
