@@ -10,8 +10,8 @@ const bubbleSort = (array) => {
                 [array[i], array[i + 1]] = [array[i + 1], array[i]]
                 sorted = false;
             }
-        }unsortedUntilIndex-=1
-    }return array;
+        } unsortedUntilIndex -= 1
+    } return array;
 
 
 }
