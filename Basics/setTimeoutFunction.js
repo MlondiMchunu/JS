@@ -1,5 +1,7 @@
 for (var i = 0; i < 3; i++) {
+
     setTimeout(function () {
-        alert(i);
-    }, 1000 + i)
+        //alert(i);
+        console.log(i);
+    }, 10000 + i)
 }
