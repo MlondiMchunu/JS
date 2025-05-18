@@ -5,7 +5,7 @@ function bubbleSort(array) {
     while (!sorted) {
         sorted = true;
 
-        for (let i = 0; i < array.unsortedUntilIndex; i++) {
+        for (let i = 0; i < unsortedUntilIndex; i++) {
             if (array[i] > array[i + 1]) {
                 [array[i], array[i + 1]] = [array[i + 1], array[i]];
                 sorted = false;
@@ -15,3 +15,5 @@ function bubbleSort(array) {
     }
     return array;
 }
+
+console.log(bubbleSort([4, 65, 1289, 76, 5, 35, 12, 97, 4, 37, 70]));
